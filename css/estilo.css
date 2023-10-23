@@ -1,0 +1,277 @@
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/0-fondo-pagina.jfif);
+    font-family: 'Lucida Sans Unicode'
+}
+
+/* fondo pagina */
+
+header {
+    background-image: url(../img/0-fondo-pagina.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main, footer {
+    background-image: url(../img/0-fondo-pagina.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* header */
+
+header {
+    border-bottom: 3px solid white;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+.botonNav{
+    background-color: #07217E;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+li, a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* main */
+
+
+/* carousel */
+
+.imagenCorrediza {
+    width: 100%;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.boton {
+    z-index: 1;
+}
+
+main {
+    color: white;
+    text-align: center;
+}
+
+/* h1 */
+h1 {
+    font-size: 4rem;
+}
+
+/* main estrenos, promos, cartelera y alimentos */
+
+.divEstrenos, .divPromos, .divPeliculas, .divAlimentos {
+    gap: 100px
+}
+
+
+.divImgEstrenos, .divImgColeccionables, .divImgBancos, .divImgCartelera, .divImgComidas {
+    border: 1px white solid;
+    border-radius: 10px;
+    background-color: black;
+    transition: 200ms;
+}
+
+/* main catelera y alimentos ocultos */
+
+.imgOculta, .imgOcultaDos, .imgOcultaTres, .imgOcultaComidas {
+    z-index: -1;
+}
+
+.divImgCartelera {
+    width: 200px;
+}
+
+/* main estrenos */
+
+.divImgEstrenos {
+    width: 275px;
+}
+
+.divTextos {
+    font-weight: bold;
+}
+
+
+/* main promos y alimentos */
+
+.divImgColeccionables, .divImgBancos, .divImgComidas {
+    width: 400px
+}
+
+/* main */
+
+.divMain img {
+    width: 30px;
+    text-align: center;
+}
+
+.ubicacion {
+    padding-left: 100px;
+}
+
+.iFrame {
+    height: 250px;
+    width: 250px;
+}
+
+/* footer */
+
+footer {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 10px 20px;
+}
+
+.footerImagen {
+    width: 30px;
+}
+
+.footerPrimero {
+    display: flex;  
+    align-items: center;
+}
+
+.footerLi {
+    padding: 0 10px;
+}
+
+.footerLetra h3 {
+    font-size: 0.8rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* hover y active */
+
+header li:hover {
+    transform: scale(1.15);
+    transition: 200ms;
+    opacity: 0.5;
+}
+
+header li:active {
+    opacity: 0.25;
+}
+
+.divImgEstrenos:hover, .divImgCartelera:hover, .divImgColeccionables:hover, .divImgComidas:hover, .divImgBancos:hover {
+    cursor: pointer;
+    background-color: rgb(23, 6, 95);
+    transform: scale(1.10);
+    opacity: 0.75;
+}
+
+.divImgEstrenos:active, .divImgCartelera:active, .divImgColeccionables:active, .divImgComidas:active, .divImgBancos:active {
+    background-color: rgb(18, 3, 77);
+    opacity: 0.50;
+}
+
+footer li:hover {
+    transform: scale(1.15);
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .divOculto {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+    .divImgEstrenos {
+        width: 175px;
+    }
+    .divEstrenos {
+        gap:  54px;
+    } 
+    
+    .imgOcultaDos, .imgOcultaTres {
+        display: none;
+    }
+    .divImgCartelera {
+        width: 190px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .linea div:first-child {
+        border-bottom: 1px solid blue;
+    }
+    .margen {
+        margin-top: 10px;
+    }
+    .divPromos, .divPeliculas {
+        gap: 54px
+    }
+    .divImgComidas {
+        width: 275px;
+    }
+    .divAlimentos {
+        gap: 80px
+    }
+    }
+
+@media (max-width: 499px) {
+    h1 {
+        font-size: 2rem
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .divImgColeccionables, .divImgBancos {
+        width: 250px;
+    }
+    .imgOculta {
+        display: none;
+    }
+
+    .divImgCartelera {
+        width: 175px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1199px) {
+    .divImgCartelera {
+        width: 125px;
+    }
+    .divTextos {
+        font-size: 0.8rem;   
+    }  
+}
+
+@media (max-width: 725px) {
+    .imgOcultaComidas {
+        display: none;
+    }
+}
