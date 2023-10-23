@@ -30,7 +30,6 @@ main, footer {
 
 header {
     border-bottom: 3px solid white;
-    position: sticky;
     top: 0;
     z-index: 2;
 }
@@ -48,11 +47,8 @@ nav li {
 }
 
 li, a {
-    color: white;
     font-size: 1rem;
     font-weight: 500;
-    text-decoration: none;
-    text-transform: uppercase;
 }
 
 /* main */
@@ -70,11 +66,6 @@ li, a {
     z-index: 1;
 }
 
-main {
-    color: white;
-    text-align: center;
-}
-
 /* h1 */
 h1 {
     font-size: 4rem;
@@ -90,7 +81,6 @@ h1 {
 .divImgEstrenos, .divImgColeccionables, .divImgBancos, .divImgCartelera, .divImgComidas {
     border: 1px white solid;
     border-radius: 10px;
-    background-color: black;
     transition: 200ms;
 }
 
@@ -110,11 +100,6 @@ h1 {
     width: 275px;
 }
 
-.divTextos {
-    font-weight: bold;
-}
-
-
 /* main promos y alimentos */
 
 .divImgColeccionables, .divImgBancos, .divImgComidas {
@@ -125,7 +110,6 @@ h1 {
 
 .divMain img {
     width: 30px;
-    text-align: center;
 }
 
 .ubicacion {
@@ -140,20 +124,13 @@ h1 {
 /* footer */
 
 footer {
-    color: white;
     font-size: 0.8rem;
-    text-align: center;
     border-top: 1px solid white;
     padding: 10px 20px;
 }
 
 .footerImagen {
     width: 30px;
-}
-
-.footerPrimero {
-    display: flex;  
-    align-items: center;
 }
 
 .footerLi {
@@ -182,13 +159,11 @@ header li:active {
 
 .divImgEstrenos:hover, .divImgCartelera:hover, .divImgColeccionables:hover, .divImgComidas:hover, .divImgBancos:hover {
     cursor: pointer;
-    background-color: rgb(23, 6, 95);
     transform: scale(1.10);
     opacity: 0.75;
 }
 
 .divImgEstrenos:active, .divImgCartelera:active, .divImgColeccionables:active, .divImgComidas:active, .divImgBancos:active {
-    background-color: rgb(18, 3, 77);
     opacity: 0.50;
 }
 
@@ -212,7 +187,6 @@ footer li:hover {
     .divEstrenos {
         gap:  54px;
     } 
-    
     .imgOcultaDos, .imgOcultaTres {
         display: none;
     }
@@ -255,13 +229,12 @@ footer li:hover {
     .imgOculta {
         display: none;
     }
-
     .divImgCartelera {
         width: 175px;
     }
 }
 
-@media (min-width: 768px) and (max-width:1199px) {
+@media (min-width: 769px) and (max-width:1199px) {
     .divImgCartelera {
         width: 125px;
     }
