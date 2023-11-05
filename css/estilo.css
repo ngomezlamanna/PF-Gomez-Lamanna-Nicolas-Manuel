@@ -1,250 +1,250 @@
 /* reset */
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url(../img/0-fondo-pagina.jfif);
-    font-family: 'Lucida Sans Unicode'
+  font-family: "Lucida Sans Unicode";
 }
 
 /* fondo pagina */
-
-header {
-    background-image: url(../img/0-fondo-pagina.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-main, footer {
-    background-image: url(../img/0-fondo-pagina.jfif);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+header,
+main,
+footer {
+  background-image: url(../img/0-fondo-pagina.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* header */
-
 header {
-    border-bottom: 3px solid white;
-    top: 0;
-    z-index: 2;
+  border-bottom: 3px solid white;
+  top: 0;
+  z-index: 2;
 }
 
 .logo {
-    width: 150px;
+  width: 150px;
 }
 
-.botonNav{
-    background-color: #07217E;
+.botonNav {
+  background-color: white;
 }
 
 nav li {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
-li, a {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* main */
-
-
-/* carousel */
-
-.imagenCorrediza {
-    width: 100%;
-    border: 1px white solid;
-    border-radius: 10px;
-}
-
-.boton {
-    z-index: 1;
+li,
+a {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* h1 */
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 /* main estrenos, promos, cartelera y alimentos */
-
-.divEstrenos, .divPromos, .divPeliculas, .divAlimentos {
-    gap: 100px
+.divEstrenos,
+.divPromos,
+.divPeliculas,
+.divAlimentos {
+  gap: 100px;
 }
 
-
-.divImgEstrenos, .divImgColeccionables, .divImgBancos, .divImgCartelera, .divImgComidas {
-    border: 1px white solid;
-    border-radius: 10px;
-    transition: 200ms;
+.divImgEstrenos,
+.divImgColeccionables,
+.divImgBancos,
+.divImgCartelera,
+.divImgComidas {
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 200ms;
 }
 
-/* main catelera y alimentos ocultos */
-
-.imgOculta, .imgOcultaDos, .imgOcultaTres, .imgOcultaComidas {
-    z-index: -1;
-}
-
-.divImgCartelera {
-    width: 200px;
-}
-
-/* main estrenos */
-
-.divImgEstrenos {
-    width: 275px;
+/* main cartelera y alimentos ocultos */
+.imgOculta,
+.imgOcultaDos,
+.imgOcultaTres,
+.imgOcultaComidas {
+  z-index: -1;
 }
 
 /* main promos y alimentos */
-
-.divImgColeccionables, .divImgBancos, .divImgComidas {
-    width: 400px
+.divImgColeccionables,
+.divImgBancos,
+.divImgComidas {
+  width: 400px;
 }
 
 /* main */
+/* carousel */
+.imagenCorrediza {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 10px;
+}
 
+.boton {
+  z-index: 1;
+}
+
+/* main */
 .divMain img {
-    width: 30px;
+  width: 30px;
 }
 
 .ubicacion {
-    padding-left: 100px;
+  padding-left: 100px;
 }
 
 .iFrame {
-    height: 250px;
-    width: 250px;
+  height: 250px;
+  width: 250px;
+}
+
+/* main cartelera */
+.divImgCartelera {
+  width: 190px;
+}
+
+/* main estrenos */
+.divImgEstrenos {
+  width: 275px;
 }
 
 /* footer */
-
 footer {
-    font-size: 0.8rem;
-    border-top: 1px solid white;
-    padding: 10px 20px;
+  font-size: 0.8rem;
+  border-top: 1px solid white;
+  padding: 10px 20px;
 }
 
 .footerImagen {
-    width: 30px;
+  width: 30px;
 }
 
 .footerLi {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .footerLetra h3 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* hover y active */
-
 header li:hover {
-    transform: scale(1.15);
-    transition: 200ms;
-    opacity: 0.5;
+  transform: scale(1.15);
+  transition: 200ms;
+  opacity: 0.5;
 }
-
 header li:active {
-    opacity: 0.25;
+  opacity: 0.25;
 }
 
-.divImgEstrenos:hover, .divImgCartelera:hover, .divImgColeccionables:hover, .divImgComidas:hover, .divImgBancos:hover {
-    cursor: pointer;
-    transform: scale(1.10);
-    opacity: 0.75;
+.divImgEstrenos:hover,
+.divImgCartelera:hover,
+.divImgColeccionables:hover,
+.divImgComidas:hover,
+.divImgBancos:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  opacity: 0.75;
 }
 
-.divImgEstrenos:active, .divImgCartelera:active, .divImgColeccionables:active, .divImgComidas:active, .divImgBancos:active {
-    opacity: 0.50;
+.divImgEstrenos:active,
+.divImgCartelera:active,
+.divImgColeccionables:active,
+.divImgComidas:active,
+.divImgBancos:active {
+  opacity: 0.5;
 }
 
 footer li:hover {
-    transform: scale(1.15);
+  transform: scale(1.15);
 }
 
 /* responsive */
-
 @media (max-width: 768px) {
-    .divOculto {
-        display: none;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-    .divImgEstrenos {
-        width: 175px;
-    }
-    .divEstrenos {
-        gap:  54px;
-    } 
-    .imgOcultaDos, .imgOcultaTres {
-        display: none;
-    }
-    .divImgCartelera {
-        width: 190px;
-    }
+  .divOculto {
+    display: none;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .divImgEstrenos {
+    width: 175px;
+  }
+  .divEstrenos {
+    gap: 54px;
+  }
+  .imgOcultaDos,
+  .imgOcultaTres {
+    display: none;
+  }
+  .divImgCartelera {
+    width: 190px;
+  }
 }
-
 @media (max-width: 1199px) {
-    .linea div:first-child {
-        border-bottom: 1px solid blue;
-    }
-    .margen {
-        margin-top: 10px;
-    }
-    .divPromos, .divPeliculas {
-        gap: 54px
-    }
-    .divImgComidas {
-        width: 275px;
-    }
-    .divAlimentos {
-        gap: 80px
-    }
-    }
-
+  .linea div:first-child {
+    border-bottom: 1px solid blue;
+  }
+  .margen {
+    margin-top: 10px;
+  }
+  .divPromos,
+  .divPeliculas {
+    gap: 54px;
+  }
+  .divImgComidas {
+    width: 275px;
+  }
+  .divAlimentos {
+    gap: 80px;
+  }
+}
 @media (max-width: 499px) {
-    h1 {
-        font-size: 2rem
-    }
-    h2 {
-        font-size: 1.5rem;
-    }
-    p {
-        font-size: 0.8rem;
-    }
-    .divImgColeccionables, .divImgBancos {
-        width: 250px;
-    }
-    .imgOculta {
-        display: none;
-    }
-    .divImgCartelera {
-        width: 175px;
-    }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .divImgColeccionables,
+  .divImgBancos {
+    width: 250px;
+  }
+  .imgOculta {
+    display: none;
+  }
+  .divImgCartelera {
+    width: 175px;
+  }
 }
-
-@media (min-width: 769px) and (max-width:1199px) {
-    .divImgCartelera {
-        width: 125px;
-    }
-    .divTextos {
-        font-size: 0.8rem;   
-    }  
+@media (min-width: 769px) and (max-width: 1199px) {
+  .divImgCartelera {
+    width: 120px;
+  }
+  .divTextos {
+    font-size: 0.8rem;
+  }
 }
-
 @media (max-width: 725px) {
-    .imgOcultaComidas {
-        display: none;
-    }
+  .imgOcultaComidas {
+    display: none;
+  }
 }
+
+/*# sourceMappingURL=estilo.css.map */

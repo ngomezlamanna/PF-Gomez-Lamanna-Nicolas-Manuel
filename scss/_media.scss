@@ -1,0 +1,95 @@
+/* responsive */
+
+@media (max-width: 768px) {
+    .divOculto {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .divImgEstrenos {
+        width: 175px;
+    }
+
+    .divEstrenos {
+        gap: 54px;
+    }
+
+    .imgOcultaDos,
+    .imgOcultaTres {
+        display: none;
+    }
+
+    .divImgCartelera {
+        width: 190px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .linea div:first-child {
+        border-bottom: 1px solid blue;
+    }
+
+    .margen {
+        margin-top: 10px;
+    }
+
+    .divPromos,
+    .divPeliculas {
+        gap: 54px;
+    }
+
+    .divImgComidas {
+        width: 275px;
+    }
+
+    .divAlimentos {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 499px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: $letra-chica;
+    }
+
+    .divImgColeccionables,
+    .divImgBancos {
+        width: 250px;
+    }
+
+    .imgOculta {
+        display: none;
+    }
+
+    .divImgCartelera {
+        width: 175px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    .divImgCartelera {
+        width: 120px;
+    }
+
+    .divTextos {
+        font-size: $letra-chica;
+    }
+}
+
+@media (max-width: 725px) {
+    .imgOcultaComidas {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+@mixin fondo {
+    background-image: url(../img/0-fondo-pagina.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin productosHover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: 0.75;
+}
+
+@mixin productosActive {
+    opacity: 0.50;
+}

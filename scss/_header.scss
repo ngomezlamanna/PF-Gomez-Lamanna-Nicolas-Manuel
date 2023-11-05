@@ -1,0 +1,25 @@
+/* header */
+
+header {
+    border-bottom: 3px solid white;
+    top: 0;
+    z-index: 2;
+}
+
+.logo {
+    width: 150px;
+}
+
+.botonNav {
+    background-color: white;
+}
+
+nav li {
+    padding: 0 20px;
+}
+
+li,
+a {
+    font-size: 1rem;
+    font-weight: 500;
+}

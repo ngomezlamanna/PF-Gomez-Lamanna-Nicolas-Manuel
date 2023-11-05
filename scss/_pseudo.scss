@@ -1,0 +1,33 @@
+/* hover y active */
+
+header li {
+    &:hover {
+        transform: scale(1.15);
+        transition: 200ms;
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.25;
+    }
+}
+
+.divImgEstrenos:hover,
+.divImgCartelera:hover,
+.divImgColeccionables:hover,
+.divImgComidas:hover,
+.divImgBancos:hover {
+    @include productosHover;
+}
+
+.divImgEstrenos:active,
+.divImgCartelera:active,
+.divImgColeccionables:active,
+.divImgComidas:active,
+.divImgBancos:active {
+    @include productosActive;
+}
+
+footer li:hover {
+    transform: scale(1.15);
+}

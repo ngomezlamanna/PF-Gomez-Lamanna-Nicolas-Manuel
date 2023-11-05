@@ -1,0 +1,7 @@
+/* fondo pagina */
+
+header,
+main,
+footer {
+    @include fondo;
+}

@@ -1,0 +1,41 @@
+/* h1 */
+
+h1 {
+    font-size: 4rem;
+}
+
+/* main estrenos, promos, cartelera y alimentos */
+
+.divEstrenos,
+.divPromos,
+.divPeliculas,
+.divAlimentos {
+    gap: 100px;
+}
+
+.divImgEstrenos,
+.divImgColeccionables,
+.divImgBancos,
+.divImgCartelera,
+.divImgComidas {
+    border: $remarcado-fino;
+    border-radius: 10px;
+    transition: $transicion-productos;
+}
+
+/* main cartelera y alimentos ocultos */
+
+.imgOculta,
+.imgOcultaDos, 
+.imgOcultaTres,
+.imgOcultaComidas {
+    z-index: -1;
+}
+
+/* main promos y alimentos */
+
+.divImgColeccionables,
+.divImgBancos,
+.divImgComidas {
+    width: 400px;
+}
