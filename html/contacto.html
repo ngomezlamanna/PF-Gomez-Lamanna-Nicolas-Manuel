@@ -8,6 +8,8 @@
     <link rel="shortcut icon" href="../img/0-logo-pestaña.png" type="image/x-icon">
     <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
@@ -35,8 +37,10 @@
     </header>
 
     <main class="text-center text-light">
-        <form class="mx-5">
-              <h1> CineNGL - Contacto </h1>
+      <h1> CineNGL - Contacto </h1>  
+      
+      <form data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom">
               <div class="mb-3">
                 <label for="Nombre" class="form-label"> Nombre </label>
                 <input type="text" id="Nombre" class="form-control" placeholder="Ej: Juan" required>
@@ -93,5 +97,11 @@
 
       <!-- JS BS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- JS AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- INICIALIZAR AOS -->
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
